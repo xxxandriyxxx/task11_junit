@@ -26,7 +26,7 @@ public class MathApp {
         return calculator.multiply(value1, value2);
     }
 
-    public double divede(int value1, int value2) {
-        return calculator.divede(value1, value2);
+    public double divide(int value1, int value2) {
+        return calculator.divide(value1, value2);
     }
 }

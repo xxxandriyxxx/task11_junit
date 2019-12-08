@@ -7,5 +7,5 @@ public interface Calculator {
 
     int multiply(int value1, int value2);
 
-    double divede(int value1, int value2);
+    double divide(int value1, int value2);
 }
