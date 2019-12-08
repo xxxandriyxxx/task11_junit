@@ -11,6 +11,8 @@ public class Board {
         this.sizeH = sizeH;
         this.sizeV = sizeV;
         this.maxBombsAmount = maxBombsAmount;
+        setCells();
+        setNeighboringBombs();
     }
 
     private void setCells() {
@@ -66,5 +68,21 @@ public class Board {
         }
     }
 
+    public void printBoard() {
+
+        for (int j = 0; j < sizeV; j++) {
+            for (int i = 0; i < sizeH; i++) {
+                System.out.print("|");
+                if (cells[i][j].isBomb()) {
+                    System.out.print("*");
+                } else if (cells[i][j].getNeighboringBombs() == 0) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print(cells[i][j].getNeighboringBombs());
+                }
+            }
+            System.out.println("|");
+        }
+    }
 
 }
