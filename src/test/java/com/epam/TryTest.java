@@ -1,11 +1,12 @@
 package com.epam;
 
+import com.epam.forTests.ForTests;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
 
 public class TryTest {
 
@@ -64,6 +65,12 @@ public class TryTest {
     public void testMethodFail() {
         count++;
         fail("Hello from fail!");
+    }
+
+    @Test
+    public void testException() {
+        count++;
+        assertThrows(Exception.class, () -> ForTests.exceptionMethod(20));
     }
 
 }
