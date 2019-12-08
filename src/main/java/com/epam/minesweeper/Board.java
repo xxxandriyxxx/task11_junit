@@ -85,4 +85,19 @@ public class Board {
         }
     }
 
+    public Cell[][] getCells() {
+        return cells;
+    }
+
+    public int getSizeH() {
+        return sizeH;
+    }
+
+    public int getSizeV() {
+        return sizeV;
+    }
+
+    public int getMaxBombsAmount() {
+        return maxBombsAmount;
+    }
 }
