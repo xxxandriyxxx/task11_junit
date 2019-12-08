@@ -1,4 +1,4 @@
-package com.epam;
+package com.epam.other;
 
 import com.epam.forTests.ForTests;
 import org.junit.jupiter.api.*;
