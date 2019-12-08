@@ -73,4 +73,10 @@ public class TryTest {
         assertThrows(Exception.class, () -> ForTests.exceptionMethod(20));
     }
 
+    @Test
+    public void readFileException() {
+        count++;
+        assertThrows(Exception.class, ForTests::readFile);
+    }
+
 }
