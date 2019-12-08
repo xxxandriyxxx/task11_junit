@@ -1,4 +1,4 @@
-package Plateau;
+package plateau;
 
 import java.util.Arrays;
 
