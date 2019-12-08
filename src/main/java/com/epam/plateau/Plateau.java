@@ -1,4 +1,4 @@
-package plateau;
+package com.epam.plateau;
 
 public class Plateau {
 
@@ -16,13 +16,13 @@ public class Plateau {
         int longestPlateauLength = 0;
         int plateauStart = 0;
         int plateauEnd = 0;
-        //if plateau exists it can start anywhere between 0 and length-3. Can't exist after that
+        //if com.epam.plateau exists it can start anywhere between 0 and length-3. Can't exist after that
         for (int i = 0; i < array.length - 3; i++) {
-            //plateau cant start at the first 3 locations
+            //com.epam.plateau cant start at the first 3 locations
             for (int j = i + 3; j < array.length; j++) {
                 boolean isLess = false;
                 boolean isMiddleHigher = true;
-                //value at the end of the plateau can be less or equal to value at the beginning
+                //value at the end of the com.epam.plateau can be less or equal to value at the beginning
                 if (array[j] <= array[i]) {
                     isLess = true;
                     //all middle values equal and higher than 1st value

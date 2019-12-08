@@ -1,4 +1,4 @@
-package minesweeper;
+package com.epam.minesweeper;
 
 public class Cell {
 
