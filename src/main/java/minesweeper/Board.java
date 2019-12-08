@@ -13,4 +13,24 @@ public class Board {
         this.maxBombsAmount = maxBombsAmount;
     }
 
+    private void setCells() {
+        int addressH;
+        int addressV;
+        cells = new Cell[sizeH][sizeV];
+        for (int i = 0; i < sizeH; i++) {
+            for (int j = 0; j < sizeV; j++) {
+                cells[i][j] = new Cell();
+            }
+        }
+        if (maxBombsAmount > (sizeH * sizeV)) {
+            maxBombsAmount = sizeH * sizeV;
+        }
+        for (int i = 0; i < maxBombsAmount; i++) {
+            addressH = (int) (Math.random() * sizeH);
+            addressV = (int) (Math.random() * sizeV);
+            cells[addressH][addressV].setBomb(true);
+        }
+    }
+
+
 }
